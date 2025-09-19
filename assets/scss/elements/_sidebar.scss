@@ -1,0 +1,8 @@
+@use '../abstracts/variables' as v;
+
+.sidebar {
+  transition: v.$transition;
+  &.collapsed {
+    width: v.$sidebar-collapsed;
+  }
+}

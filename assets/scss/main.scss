@@ -1,3 +1,4 @@
+@use './core/fonts';
 
 @use "~bootstrap/scss/bootstrap" with (
   $primary:        #7843E9,
@@ -8,6 +9,7 @@
 @use './core/template';
 @use './elements/sidebar';
 @use './elements/content';
+
 
 // @use "bootstrap/scss/variables" as vars;
 // @import "~bootstrap/scss/variables";

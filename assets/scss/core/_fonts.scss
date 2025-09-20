@@ -1,0 +1,129 @@
+// =====================================
+//  Self-hosted fonts
+//  DM Sans + JetBrains Mono (latin-ext)
+//  font-display: swap for CLS/FOUT hygiene
+// =====================================
+
+$font-path: "../../fonts" !default;
+
+// ---------- DM Sans (normal) ----------
+@font-face {
+  font-family: "DM Sans";
+  src: url("#{$font-path}/dm-sans-100.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("#{$font-path}/dm-sans-200.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("#{$font-path}/dm-sans-300.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("#{$font-path}/dm-sans-regular.woff2") format("woff2");
+  font-weight: 400; // regular
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("#{$font-path}/dm-sans-500.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("#{$font-path}/dm-sans-600.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("#{$font-path}/dm-sans-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("#{$font-path}/dm-sans-800.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("#{$font-path}/dm-sans-900.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---------- JetBrains Mono (normal) ---------- */
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("#{$font-path}/jetbrains-mono-200.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("#{$font-path}/jetbrains-mono-300.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("#{$font-path}/jetbrains-mono-regular.woff2") format("woff2");
+  font-weight: 400; // regular
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("#{$font-path}/jetbrains-mono-500.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("#{$font-path}/jetbrains-mono-600.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("#{$font-path}/jetbrains-mono-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("#{$font-path}/jetbrains-mono-800.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* (Opcjonalnie) jeśli masz też .woff/.ttf, możesz dopisać w src kolejne formaty, np.:
+src: url("#{$font-path}/… .woff2") format("woff2"),
+     url("#{$font-path}/… .woff") format("woff"),
+     url("#{$font-path}/… .ttf") format("truetype");
+*/

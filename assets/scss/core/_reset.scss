@@ -1,6 +1,11 @@
 @use "~bootstrap/scss/bootstrap" as bs;
 
 html, body {
-  height: 100%;
-  margin: 0;      /* usuwa domyślny margines body */
+    height: 100%;
+    margin: 0;
+    font-family: var(--font-sans);
+}
+
+code {
+    font-family: var(--font-mono);
 }

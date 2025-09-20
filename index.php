@@ -2,8 +2,10 @@
 
 <div class="content-inner">
     <a class="logo-name" href="<?php echo site_url() ?>" title="<?php bloginfo('name'); ?>">
-      <h1>Maciek Robacki</h1>
+      <code>
+        <h1>Maciek Robacki</h1>
       <h2>Frontend Web Developer | UX Designer</h2>
+      </code>
     </a>
     <div class="content-item sub-page projects-page">
         <div class="content-inside sub-page projects-page">

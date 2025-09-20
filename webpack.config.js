@@ -20,6 +20,10 @@ const cssLoaders = [
 		options: { sourceMap: true }
 	},
 	{
+		loader: 'resolve-url-loader',
+		options: { sourceMap: true }
+	},
+	{
 		loader: 'sass-loader',
 		options: { 
 			sourceMap: true,
@@ -58,6 +62,16 @@ module.exports = {
 				{
 					test: [/\.css$/, /\.s[ac]ss$/i],
 					use: cssLoaders
+				},
+				 // FONTY
+				{
+					test: /\.(woff2?|ttf|otf|eot)$/i,
+					type: 'asset/resource',
+					generator: {
+					filename: 'fonts/[name][hash][ext][query]'
+					// jeśli nie chcesz hashy:
+					// filename: 'fonts/[name][ext][query]'
+					}
 				},
 		]
 	},

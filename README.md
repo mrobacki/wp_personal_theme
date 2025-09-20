@@ -9,3 +9,7 @@ Custom WordPress theme developed for **robacki.pl** with a modern frontend stack
 3. **Day/Night Mode** – Integrated theme switcher that automatically detects and applies user’s system preferences (light/dark mode), with manual toggle support.
 4. **Self-hosted Google Fonts** – Google Fonts are downloaded and served locally for improved performance, privacy, and reliability.
 5. **WordPress Customizer Support** – The theme integrates with the WordPress Customizer, allowing easy configuration of logo text, colors, and other design options directly from the admin panel.
+6. **Branching Workflow** – The project follows a clear branching strategy:  
+   - `master` – stable production-ready code  
+   - `dev` – main development branch  
+   - `header`, `footer` – feature branches created from `dev` for modular development  

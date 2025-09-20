@@ -30,6 +30,12 @@
                             <?php
                         }
                     ?>
+                    <?php 
+                        $logo_text = get_theme_mod('custom_logo_text');
+                        if ($logo_text) {
+                            echo '<div class="logo-text"><a href="'. esc_url(home_url('/')) .'">' . $logo_text . '</a></div>';
+                        }
+                    ?>
                     <div class="site-branding">
                         
                         <div class="site-identity">

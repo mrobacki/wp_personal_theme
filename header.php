@@ -30,33 +30,13 @@
                             <?php
                         }
                     ?>
-                    <?php 
-                        $logo_text = get_theme_mod('custom_logo_text');
-                        if ($logo_text) {
-                            echo '<div class="logo-text"><a href="'. esc_url(home_url('/')) .'">' . $logo_text . '</a></div>';
-                        }
-                    ?>
                     <div class="site-branding">
-                        
-                        <div class="site-identity">
-                        <?php if ( is_front_page() && is_home() ) : ?>
-                            <h1 class="site-title" itemprop="headline">
-                            <a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
-                            </h1>
-                        <?php else : ?>
-                            <p class="site-title" itemprop="headline">
-                            <a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
-                            </p>
-                        <?php endif; ?>
-                        <?php
-                            $desc = get_bloginfo('description', 'display');
-                            if ( $desc || is_customize_preview() ) :
+                        <?php 
+                            $logo_text = get_theme_mod('custom_logo_text');
+                            if ($logo_text) {
+                                echo '<div class="logo-text"><a href="'. esc_url(home_url('/')) .'" title="'.get_bloginfo('name').'">' . $logo_text . '</a></div>';
+                            }
                         ?>
-                            <p class="site-description" itemprop="description"><?php echo esc_html($desc); ?></p>
-                        <?php endif; ?>
-                        </div>
-                
-                        
                     </div>
                     <div class="theme-switcher">
                         <div class="form-check form-switch">
